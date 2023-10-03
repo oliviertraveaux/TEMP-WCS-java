@@ -8,6 +8,6 @@ public class Boats extends Vehicle {
 
     @Override
     public String doStuff() {
-        return "Je suis " + this.getBrand() + " et je fais glou.";
+        return "Je suis " + getBrand() + " et je fais glou.";
     }
 }

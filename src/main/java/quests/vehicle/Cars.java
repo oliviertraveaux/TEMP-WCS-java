@@ -7,6 +7,6 @@ public class Cars extends Vehicle {
     }
     @Override
     public String doStuff() {
-        return "Je suis " + this.getBrand() + " et je fais vroum.";
+        return "Je suis " + getBrand() + " et je fais vroum.";
     }
 }
