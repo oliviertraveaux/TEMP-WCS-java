@@ -6,14 +6,14 @@ public class ControlFlow {
         int b = 1;
 
         do {
-           if(b > 10) {
-               b = 1;
-               a++;
-           } else {
-               int produit = a * b;
-               System.out.printf("Le produit de %1d * %d = %d %n", a, b, produit);
-               b++;
-           }
+            if (b > 10) {
+                b = 1;
+                a++;
+            } else {
+                int produit = a * b;
+                System.out.printf("Le produit de %1d * %d = %d %n", a, b, produit);
+                b++;
+            }
         } while (a <= 10);
     }
 }
