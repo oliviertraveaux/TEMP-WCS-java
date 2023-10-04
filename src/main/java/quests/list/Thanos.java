@@ -18,13 +18,7 @@ public class Thanos {
         Comparator<Hero> comparatorAge = new Comparator<Hero>() {
             @Override
             public int compare(Hero hero1, Hero hero2) {
-                if (hero2.getAge() < hero1.getAge()) {
-                    return -1;
-                } else if (hero2.getAge() > hero1.getAge()) {
-                    return 1;
-                } else {
-                    return 0;
-                }
+                return hero2.getAge() - hero1.getAge();
             }
         };
 
