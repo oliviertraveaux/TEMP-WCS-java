@@ -34,10 +34,15 @@ public class Hero implements Comparable<Hero> {
 
     @Override
     public int compareTo(Hero hero) {
-        return this.getName().compareTo(hero.name);
+        if (this.getName() == null && hero.getName() == null) {
+            return 0;
+        } else if (this.getName() == null) {
+            return -1; // Consider null as less than any non-null value
+        } else if (hero.getName() == null) {
+            return 1; // Consider any non-null value greater than null
+        } else {
+            return this.getName().compareTo(hero.getName());
+        }
     }
-
-
-
 
 }
