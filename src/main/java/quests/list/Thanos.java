@@ -22,8 +22,6 @@ public class Thanos {
             }
         };
 
-        // TODO 1 : Modify Hero to implements Comparable and sort by name (ascending)
-
         Collections.sort(heroes);
 
         System.out.println("\nOrder by name:");
@@ -35,7 +33,6 @@ public class Thanos {
 //        Hulk, 49
 //        Thor, 1501
 
-        // TODO 2: Add a Comparator and sort by age (descending)
 
         Collections.sort(heroes, comparatorAge);
 
